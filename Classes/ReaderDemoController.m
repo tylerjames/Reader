@@ -196,7 +196,9 @@
 		readerViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 		readerViewController.modalPresentationStyle = UIModalPresentationFullScreen;
 
-		[self presentViewController:readerViewController animated:YES completion:NULL];
+		[self presentViewController:readerViewController animated:YES completion:^{
+            [readerViewController hideToolBarsWithDelay:3];
+        }];
 
 #endif // DEMO_VIEW_CONTROLLER_PUSH
 	}

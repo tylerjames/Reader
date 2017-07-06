@@ -899,4 +899,18 @@
 	if (userInterfaceIdiom == UIUserInterfaceIdiomPad) if (printInteraction != nil) [printInteraction dismissAnimated:NO];
 }
 
+#pragma mark - Hiding Toolbars 
+#pragma mark - Vayyoo Methods
+-(void)hideToolbars
+{
+    [mainToolbar hideToolbar];
+    [mainPagebar hidePagebar]; // Hide
+    lastHideTime = [NSDate date]; // Set last hide time
+}
+
+-(void)hideToolBarsWithDelay:(NSTimeInterval)delay
+{
+    [self performSelector:@selector(hideToolbars) withObject:self afterDelay:delay];
+}
+
 @end

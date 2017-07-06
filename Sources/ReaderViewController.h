@@ -44,4 +44,7 @@
 - (instancetype)initWithReaderDocument:(ReaderDocument *)object;
 - (void)showDocumentPage:(NSInteger)page;
 
+-(void)hideToolbars;
+-(void)hideToolBarsWithDelay:(NSTimeInterval)delay;
+
 @end
