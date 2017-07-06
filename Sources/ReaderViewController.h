@@ -42,5 +42,6 @@
 @property (nonatomic, weak, readwrite) id <ReaderViewControllerDelegate> delegate;
 
 - (instancetype)initWithReaderDocument:(ReaderDocument *)object;
+- (void)showDocumentPage:(NSInteger)page;
 
 @end
