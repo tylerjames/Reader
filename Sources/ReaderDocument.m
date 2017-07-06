@@ -71,7 +71,6 @@
 @synthesize password = _password;
 @synthesize filePath = _filePath;
 @dynamic fileName, fileURL;
-@dynamic canEmail, canExport, canPrint;
 
 #pragma mark - ReaderDocument class methods
 

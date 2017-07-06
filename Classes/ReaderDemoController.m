@@ -177,6 +177,9 @@
 	NSString *filePath = [pdfs firstObject]; assert(filePath != nil); // Path to first PDF file
 
 	ReaderDocument *document = [ReaderDocument withDocumentFilePath:filePath password:phrase];
+    document.canExport = NO;
+    document.canPrint = NO;
+    document.canEmail = NO;
 
 	if (document != nil) // Must have a valid ReaderDocument object in order to proceed with things
 	{
