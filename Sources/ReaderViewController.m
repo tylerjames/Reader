@@ -309,6 +309,7 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self removeKVO];
 }
 
 - (void)viewDidLoad {
