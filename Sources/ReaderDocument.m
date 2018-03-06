@@ -218,7 +218,7 @@
 			}
 			else // Cupertino, we have a problem with the document
 			{
-                self = nil;
+                return nil;
 			}
 
 			_lastOpen = [NSDate dateWithTimeIntervalSinceReferenceDate:0.0];
